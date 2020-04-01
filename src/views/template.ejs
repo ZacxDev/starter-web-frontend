@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <!-- Configure user agent -->
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+</head>
+<body>
+  <%if (env.NODE_ENV === 'production') { %>
+    <div>This will be rendered in production only</div>
+  <% } else { %>
+    <div>This will be rendered in development only</div>
+  <% } %>
+  <div>This will be rendered in both!  Current mode: <%= env.NODE_ENV %></div>
+  <div id="react-app"></div>
+</body>
+</html>
