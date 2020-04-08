@@ -8,7 +8,7 @@ module.exports = {
   watch: !CI && NODE_ENV !== 'production',
   mode: NODE_ENV,
   devtool: CI || NODE_ENV === 'production' ? 'source-map' : 'inline-source-map',
-  entry: './src/index.ts',
+  entry: './src/index.tsx',
   output: {
     filename: 'dist.js',
     path: path.resolve(__dirname, 'www/js'),
@@ -86,6 +86,7 @@ module.exports = {
     extensions: ['.js', '.ts', '.tsx', '.png', '.jpg', '.webp'],
     alias: {
       Images: path.resolve(__dirname, 'src/images'),
+      Clients: path.resolve(__dirname, 'src/clients'),
     }
   },
   devServer: {

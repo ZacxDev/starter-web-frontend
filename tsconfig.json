@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "./build/",
     "sourceMap": true,
     "noImplicitAny": true,
     "module": "ESNext",
@@ -15,6 +14,9 @@
     "paths": {
       "Images/*": [
         "src/images/*"
+      ],
+      "Clients/*": [
+        "src/clients/*"
       ]
     }
   },

@@ -5,7 +5,8 @@
   "main": "webpack.config.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
+    "build": "CI=true webpack",
+    "watch": "webpack",
     "dev": "webpack-dev-server"
   },
   "repository": {
@@ -44,6 +45,7 @@
     "dotenv": "^8.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-loading": "^2.0.3",
     "react-router-dom": "^5.1.2"
   }
 }
